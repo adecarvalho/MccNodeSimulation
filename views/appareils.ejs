@@ -1,0 +1,110 @@
+<h1 class="text-center"><%= titre %></h1>
+<div class="row">
+    <!-- bloc Tension Ua -->
+    <div class="col-md-4 col-sm-12 py-2" id="tension_ua">
+        <div class="card text-center">
+            <div class="card-header bg-primary mtete">
+                <h3>Ua (V)</h3>
+            </div>
+            <div class="card-body">
+                <div id="gauge_tension_ua" class="gauge"></div>
+            </div>
+            <!-- slider -->
+            <div class="m_slider">
+                <div>
+                    <input type="text" id="range_ua" name="range_ua" value="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- bloc Courant Ie -->
+    <div class="col-md-4 col-sm-12 py-2" id="courant_ie">
+        <div class="card text-center">
+            <div class="card-header bg-primary mtete">
+                <h3>Ie (mA)</h3>
+            </div>
+            <div class="card-body">
+                <div id="gauge_courant_ie" class="gauge"></div>
+            </div>
+            <!-- slider -->
+            <div class="m_slider">
+                <div>
+                    <input type="text" id="range_ie" name="range_ie" value="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- bloc Charge Cr -->
+    <div class="col-md-4 col-sm-12 py-2" id="couple_charge">
+        <div class="card text-center">
+            <div class="card-header bg-primary mtete">
+                <h3>Cr (Nm)</h3>
+            </div>
+            <div class="card-body">
+                <div id="gauge_couple_charge" class="gauge"></div>
+            </div>
+            <!-- slider -->
+            <div class="m_slider">
+                <div>
+                    <input type="text" id="range_cr" name="range_cr" value="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+<!--  -->
+<div class="row">
+    <!-- bloc Courant Ia -->
+    <div class="col-md-3 col-sm-12 py-4" id="courant_ia">
+        <div class="card text-center">
+            <div class="card-header bg-primary mtete">
+                <h3>Ia (A)</h3>
+            </div>
+            <div class="card-body">
+                <p id="gauge_courant_ia" class="mlcd">0.0</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- bloc vitesse en tr/min -->
+    <div class="col-md-3 col-sm-12 py-4" id="vitesse_n">
+        <div class="card text-center">
+            <div class="card-header bg-primary mtete">
+                <h3>Vitesse (tr/min)</h3>
+            </div>
+            <div class="card-body">
+                <p id="gauge_vitesse" class="mlcd">0.0</p>
+            </div>
+        </div>
+    </div>
+
+<!--  -->
+
+    <!-- bloc puissance abs -->
+    <div class="col-md-3 col-sm-12 py-4" id="puissance_absorbee">
+        <div class="card text-center">
+            <div class="card-header bg-primary mtete">
+                <h3>Pabs (W)</h3>
+            </div>
+            <div class="card-body">
+                <p id="gauge_puissance_absorbee" class="mlcd">0</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- bloc puissance utile -->
+    <div class="col-md-3 col-sm-12 py-4" id="puissance_utile">
+        <div class="card text-center">
+            <div class="card-header bg-primary mtete">
+                <h3>Put (W)</h3>
+            </div>
+            <div class="card-body">
+                <p id="gauge_puissance_utile" class="mlcd">0</p>
+            </div>
+        </div>
+    </div>
+</div>
