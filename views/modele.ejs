@@ -31,9 +31,9 @@
                         <% } %>
                 </div>
                 <% } %>
-            <!--  -->
+                    <!--  -->
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-4">
                             <!-- les parametres -->
                             <form action="/" method="post" class="mform">
                                 <!-- valeur de m -->
@@ -53,49 +53,50 @@
                                     <label for="mcc_f">Frottement f[Nms]:</label>
                                     <input type="number" id="mcc_f" name="mcc_f" value="<%= mcc_datas.f %>" step=0.0001 min=0 max=2 class="form-control">
                                 </div>
-
-                                <!-- valeur de Uan -->
-                                <div class="form-group">
-                                    <label for="mcc_uan">Tension induit nominal Uan[V]:</label>
-                                    <input type="number" id="mcc_uan" name="mcc_uan" value="<%= mcc_datas.uan %>" step=0.1 min=0 max=300 class="form-control">
-                                </div>
-
-                                <!-- valeur de Ian -->
-                                <div class="form-group">
-                                    <label for="mcc_ian">Courant induit nominal Ian[A]:</label>
-                                    <input type="number" id="mcc_ian" name="mcc_ian" value="<%= mcc_datas.ian %>" step=0.1 min=0 max=30 class="form-control">
-                                </div>
-
-                                <!-- valeur de Ien -->
-                                <div class="form-group">
-                                    <label for="mcc_ien">Courant inducteur nominal Ien[mA]:</label>
-                                    <input type="number" id="mcc_ien" name="mcc_ien" value="<%= mcc_datas.ien %>" step=1 min=0 max=300 class="form-control">
-                                </div>
-
-                                <!-- valeur de Nn -->
-                                <div class="form-group">
-                                    <label for="mcc_nn">Vitesse nominale Nn[tr/min]:</label>
-                                    <input type="number" id="mcc_nn" name="mcc_nn" value="<%= mcc_datas.vitn %>" step=1 min=0 max=4000 class="form-control">
-                                </div>
-
                                 <!-- submit -->
-                                <input type="submit" class="btn btn-primary btn-lg" value="Enregistrer">
+                                <input type="submit" class="btn btn-primary" value="Enregistrer">
+                        </div>
+                        <div class="col-md-4">
+                            <!-- valeur de Uan -->
+                            <div class="form-group">
+                                <label for="mcc_uan">Tension induit nominal Uan[V]:</label>
+                                <input type="number" id="mcc_uan" name="mcc_uan" value="<%= mcc_datas.uan %>" step=0.1 min=0 max=300 class="form-control">
+                            </div>
+
+                            <!-- valeur de Ian -->
+                            <div class="form-group">
+                                <label for="mcc_ian">Courant induit nominal Ian[A]:</label>
+                                <input type="number" id="mcc_ian" name="mcc_ian" value="<%= mcc_datas.ian %>" step=0.1 min=0 max=30 class="form-control">
+                            </div>
+
+                            <!-- valeur de Ien -->
+                            <div class="form-group">
+                                <label for="mcc_ien">Courant inducteur nominal Ien[mA]:</label>
+                                <input type="number" id="mcc_ien" name="mcc_ien" value="<%= mcc_datas.ien %>" step=1 min=0 max=300 class="form-control">
+                            </div>
+
+                            <!-- valeur de Nn -->
+                            <div class="form-group">
+                                <label for="mcc_nn">Vitesse nominale Nn[tr/min]:</label>
+                                <input type="number" id="mcc_nn" name="mcc_nn" value="<%= mcc_datas.vitn %>" step=1 min=0 max=4000 class="form-control">
+                            </div>
                             </form>
-                            <!-- fig -->
                         </div>
-                        <!-- fig -->
-                        <div class="col-md-6">
 
-                            <img src="/images/modele_de_mcc.png" id="image_modele_mcc" class="img-fluid mx-auto" alt="fig mcc">
-                            <hr>
-                            <img src="/images/mcc.jpg" id="image_mcc" class="img-fluid mx-auto" alt="">
 
-                        </div>
+                    <!-- fig -->
+                    <div class="col-md-4">
+
+                        <img src="/images/modele_de_mcc.png" id="image_modele_mcc" class="img-fluid mx-auto" alt="fig mcc">
+                        <hr>
+                        <img src="/images/mcc.jpg" id="image_mcc" class="img-fluid mx-auto" alt="">
+
                     </div>
-                    <!--  -->
-                    <% include footer.ejs %>
         </div>
-        <% include les_scripts.ejs %>
+        <!--  -->
+        <% include footer.ejs %>
+            </div>
+            <% include les_scripts.ejs %>
 </body>
 
 </html>
