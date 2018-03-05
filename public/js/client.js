@@ -270,5 +270,11 @@ $(document).ready(function() {
         //
         gaugePuissanceUtile.text(datas.put.toFixed(0));
     });
+
+    //****************************
+    //exit
+    socket.on('exit',function(){
+        socket.close();
+    });
 });
 //fin
